@@ -1,0 +1,18 @@
+{
+	"name": "jquery-finnishhyphenator",
+	"version": "3.3.4",
+	"homepage": "https://github.com/vepasto/finnish-hyphenator",
+	"authors": [
+		"Veikko Karsikko <veikko.karsikko@gmail.com>"
+	],
+	"description": "Hyphenates finnish text",
+	"main": "src/jquery.finnishhyphenator.js",
+	"keywords": [
+		"jquery",
+		"hyphenator",
+		"tavutus",
+		"finnish",
+		"suomi"
+	],
+	"license": "MIT"
+}

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Finnish Hyphenator Example</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../dist/jquery.finnishhyphenator.min.js"></script>
+	<style>
+	.hyphExample{
+		max-width:245px;
+		float:left;
+		margin-right: 10px;
+		text-align: justify;
+	}
+	</style>
+</head>
+<body>
+	<h1>Finnish Hyphenator Example</h1>
+	<p>Example text from wikipedia http://fi.wikipedia.org/wiki/Tavu</p>
+	<div class="hyphExample">
+		<h2>Without hyphenator</h2>
+		<p><b>Tavu</b> on <a href="/wiki/Puhe" title="Puhe">puhutun kielen</a> rytmiyksikkö, joka koostuu yhdestä tai (yleensä) enintään muutamasta <a href="/wiki/%C3%84%C3%A4nne" title="Äänne">äänteestä</a>. Yhdestä tai useammasta tavusta puolestaan muodostuu <a href="/wiki/Sana" title="Sana">sanoja</a>. Tavujen hahmotus perustuu <a href="/wiki/Fonotaksi" title="Fonotaksi">fonotaktisiin</a> sääntöihin, jotka vaihtelevat jonkin verran kielestä riippuen. Lapset omaksuvat <a href="/wiki/%C3%84idinkieli" title="Äidinkieli">äidinkielelleen</a> ominaisen tavurakenteen luonnostaan, ja jo pikkulapset osaavat jakaa sanoja tavuihin. Kun sanojen tavurakenteeseen halutaan kiinnittää erityistä huomiota, voidaan puhua <i>tavaamisesta</i> ja <a href="/wiki/Kirjoitus" title="Kirjoitus">kirjoituksen</a> yhteydessä <i>tavuttamisesta</i>. Yleensä tavujen rajoja ei kirjoituksessa tarvitse erikseen merkitä.<p>
+	</div>
+	<div class="hyphExample">
+		<h2>With hyphenator</h2>
+		<p class="hyph"><b>Tavu</b> on <a href="/wiki/Puhe" title="Puhe">puhutun kielen</a> rytmiyksikkö, joka koostuu yhdestä tai (yleensä) enintään muutamasta <a href="/wiki/%C3%84%C3%A4nne" title="Äänne">äänteestä</a>. Yhdestä tai useammasta tavusta puolestaan muodostuu <a href="/wiki/Sana" title="Sana">sanoja</a>. Tavujen hahmotus perustuu <a href="/wiki/Fonotaksi" title="Fonotaksi">fonotaktisiin</a> sääntöihin, jotka vaihtelevat jonkin verran kielestä riippuen. Lapset omaksuvat <a href="/wiki/%C3%84idinkieli" title="Äidinkieli">äidinkielelleen</a> ominaisen tavurakenteen luonnostaan, ja jo pikkulapset osaavat jakaa sanoja tavuihin. Kun sanojen tavurakenteeseen halutaan kiinnittää erityistä huomiota, voidaan puhua <i>tavaamisesta</i> ja <a href="/wiki/Kirjoitus" title="Kirjoitus">kirjoituksen</a> yhteydessä <i>tavuttamisesta</i>. Yleensä tavujen rajoja ei kirjoituksessa tarvitse erikseen merkitä.<p>
+	</div>
+	<script>
+		$(function() {
+			$(".hyph").finnishHyphenator();
+		});
+	</script>
+</body>
+</html>
