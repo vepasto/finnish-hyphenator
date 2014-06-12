@@ -1,11 +1,11 @@
 {
-	"name": "jquery-finnishhyphenator",
-	"version": "3.3.4",
+	"name": "jquery finnish hyphenator",
+	"version": "0.1.0",
 	"homepage": "https://github.com/vepasto/finnish-hyphenator",
 	"authors": [
 		"Veikko Karsikko <veikko.karsikko@gmail.com>"
 	],
-	"description": "Hyphenates finnish text",
+	"description": "Adds hyphens to finnish text",
 	"main": "src/jquery.finnishhyphenator.js",
 	"keywords": [
 		"jquery",
