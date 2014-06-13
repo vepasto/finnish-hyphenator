@@ -73,6 +73,6 @@ See the [Contributing Guide](CONTRIBUTING.md)
 
 ## License
 
-Copyright © 2013 Veikko Karsikko.
+Copyright © 2014 Veikko Karsikko.
 Licensed under the MIT license.
 
