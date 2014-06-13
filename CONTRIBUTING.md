@@ -1,4 +1,4 @@
-# Contributing to Finnish Hyphenator jQuery plugin
+# Contributing to Finnish Hyphenator
 
 Thanks for contributing! Here's a few guidelines to help your contribution get landed.
 
