@@ -15,7 +15,7 @@
 ;(function($, window, document, undefined) {
 	var vowels = "aeiouyåäö";
 	var consonants = "bcdfghjklmnpqrstvwxyz";
-	var hyphMark = "&shy;"; 
+	var hyphMark = "&shy;";
 	// construct regExps only once
 	var rule1RegExp = new RegExp("[" + consonants + "][" + vowels + "]", "gi");
 	var endReg = new RegExp("[" + consonants + vowels + "]{2}$", "i");
@@ -30,7 +30,7 @@
 			return false;
 		}
 	};
- 	
+
 	var $wrapperElement = $("<div></div>");
 	var hyphenateElement = function($el) {
 		$el.contents().each(function() {
@@ -79,7 +79,7 @@
 			hyphenateElement($(this.element));
 		}
 	});
-	
+
 	$.fn[pluginName] = function(options) {
 		this.each(function() {
 			if (!$.data(this, "plugin_" + pluginName)) {

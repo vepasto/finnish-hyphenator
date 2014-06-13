@@ -1,6 +1,7 @@
 # Finnish Hyphenator
 
-An ultra light finnish text hyphenator
+An ultra light Finnish text hyphenator.
+
 
 ## Usage
 
