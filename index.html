@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=640" />
+	<meta name="description" content="Super easy and light weight front-end finnish language hyphenator">
+
+	<link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+	<link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+	<link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+	<script type="text/javascript" src="javascripts/modernizr.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#main_content').headsmart()
+		})
+	</script>
+	<script type="text/javascript" src="javascripts/jquery.finnishhyphenator.min.js"></script>
+	<title>Finnish-hyphenator by vepasto</title>
+	<style>
+	.hyphExample{
+		max-width:243px;
+		float:left;
+		margin-right: 10px;
+	}
+	.justify{
+		text-align: justify;
+	}
+	</style>
+</head>
+
+<body>
+	<a id="forkme_banner" href="https://github.com/vepasto/finnish-hyphenator">View on GitHub</a>
+	<div class="shell">
+
+		<header>
+			<span class="ribbon-outer">
+				<span class="ribbon-inner">
+					<h1>Finnish-hyphenator</h1>
+					<h2>Hyphenates finnish text</h2>
+				</span>
+				<span class="left-tail"></span>
+				<span class="right-tail"></span>
+			</span>
+		</header>
+
+		<section id="downloads">
+			<span class="inner">
+				<a href="https://github.com/vepasto/finnish-hyphenator/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/vepasto/finnish-hyphenator/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+			</span>
+		</section>
+
+
+		<span class="banner-fix"></span>
+
+
+		<section id="main_content">
+			<p>Tavuttajan tavoite on helppokäyttöinen ja kevyt selainpuolen tekstien tavutus. Scriptin tarkoitus ei ole olla täydellinen tavuttaja, vaan tavuttaa varmimmat tapaukset. Mielummin tavuttaja jättää tavuttamatta kuin tavuttaa epävarman paikan.</p>
+
+			<h1>Finnish Hyphenator Example</h1>
+			<p>Example text from wikipedia http://fi.wikipedia.org/wiki/Tavu</p>
+			<div class="hyphExample">
+				<h2>Without hyphenator justified</h2>
+				<p class="justify"><b>Tavu</b> on <a href="/wiki/Puhe" title="Puhe">puhutun kielen</a> rytmiyksikkö, joka koostuu yhdestä tai (yleensä) enintään muutamasta <a href="/wiki/%C3%84%C3%A4nne" title="Äänne">äänteestä</a>. Yhdestä tai useammasta tavusta puolestaan muodostuu <a href="/wiki/Sana" title="Sana">sanoja</a>. Tavujen hahmotus perustuu <a href="/wiki/Fonotaksi" title="Fonotaksi">fonotaktisiin</a> sääntöihin, jotka vaihtelevat jonkin verran kielestä riippuen. Lapset omaksuvat <a href="/wiki/%C3%84idinkieli" title="Äidinkieli">äidinkielelleen</a> ominaisen tavurakenteen luonnostaan, ja jo pikkulapset osaavat jakaa sanoja tavuihin. Kun sanojen tavurakenteeseen halutaan kiinnittää erityistä huomiota, voidaan puhua <i>tavaamisesta</i> ja <a href="/wiki/Kirjoitus" title="Kirjoitus">kirjoituksen</a> yhteydessä <i>tavuttamisesta</i>. Yleensä tavujen rajoja ei kirjoituksessa tarvitse erikseen merkitä.</p>
+			</div>
+			<div class="hyphExample">
+				<h2>With hyphenator justified</h2>
+				<p class="justify hyph"><b>Tavu</b> on <a href="/wiki/Puhe" title="Puhe">puhutun kielen</a> rytmiyksikkö, joka koostuu yhdestä tai (yleensä) enintään muutamasta <a href="/wiki/%C3%84%C3%A4nne" title="Äänne">äänteestä</a>. Yhdestä tai useammasta tavusta puolestaan muodostuu <a href="/wiki/Sana" title="Sana">sanoja</a>. Tavujen hahmotus perustuu <a href="/wiki/Fonotaksi" title="Fonotaksi">fonotaktisiin</a> sääntöihin, jotka vaihtelevat jonkin verran kielestä riippuen. Lapset omaksuvat <a href="/wiki/%C3%84idinkieli" title="Äidinkieli">äidinkielelleen</a> ominaisen tavurakenteen luonnostaan, ja jo pikkulapset osaavat jakaa sanoja tavuihin. Kun sanojen tavurakenteeseen halutaan kiinnittää erityistä huomiota, voidaan puhua <i>tavaamisesta</i> ja <a href="/wiki/Kirjoitus" title="Kirjoitus">kirjoituksen</a> yhteydessä <i>tavuttamisesta</i>. Yleensä tavujen rajoja ei kirjoituksessa tarvitse erikseen merkitä.</p>
+			</div>
+			<div style="clear:both"></div>
+			<div class="hyphExample">
+				<h2>Without hyphenator</h2>
+				<p><b>Tavu</b> on <a href="/wiki/Puhe" title="Puhe">puhutun kielen</a> rytmiyksikkö, joka koostuu yhdestä tai (yleensä) enintään muutamasta <a href="/wiki/%C3%84%C3%A4nne" title="Äänne">äänteestä</a>. Yhdestä tai useammasta tavusta puolestaan muodostuu <a href="/wiki/Sana" title="Sana">sanoja</a>. Tavujen hahmotus perustuu <a href="/wiki/Fonotaksi" title="Fonotaksi">fonotaktisiin</a> sääntöihin, jotka vaihtelevat jonkin verran kielestä riippuen. Lapset omaksuvat <a href="/wiki/%C3%84idinkieli" title="Äidinkieli">äidinkielelleen</a> ominaisen tavurakenteen luonnostaan, ja jo pikkulapset osaavat jakaa sanoja tavuihin. Kun sanojen tavurakenteeseen halutaan kiinnittää erityistä huomiota, voidaan puhua <i>tavaamisesta</i> ja <a href="/wiki/Kirjoitus" title="Kirjoitus">kirjoituksen</a> yhteydessä <i>tavuttamisesta</i>. Yleensä tavujen rajoja ei kirjoituksessa tarvitse erikseen merkitä.</p>
+			</div>
+			<div class="hyphExample">
+				<h2>With hyphenator</h2>
+				<p class="hyph"><b>Tavu</b> on <a href="/wiki/Puhe" title="Puhe">puhutun kielen</a> rytmiyksikkö, joka koostuu yhdestä tai (yleensä) enintään muutamasta <a href="/wiki/%C3%84%C3%A4nne" title="Äänne">äänteestä</a>. Yhdestä tai useammasta tavusta puolestaan muodostuu <a href="/wiki/Sana" title="Sana">sanoja</a>. Tavujen hahmotus perustuu <a href="/wiki/Fonotaksi" title="Fonotaksi">fonotaktisiin</a> sääntöihin, jotka vaihtelevat jonkin verran kielestä riippuen. Lapset omaksuvat <a href="/wiki/%C3%84idinkieli" title="Äidinkieli">äidinkielelleen</a> ominaisen tavurakenteen luonnostaan, ja jo pikkulapset osaavat jakaa sanoja tavuihin. Kun sanojen tavurakenteeseen halutaan kiinnittää erityistä huomiota, voidaan puhua <i>tavaamisesta</i> ja <a href="/wiki/Kirjoitus" title="Kirjoitus">kirjoituksen</a> yhteydessä <i>tavuttamisesta</i>. Yleensä tavujen rajoja ei kirjoituksessa tarvitse erikseen merkitä.</p>
+			</div>
+			<div style="clear:both"></div>
+			<script>
+				$(function() {
+					$(".hyph").finnishHyphenator();
+				});
+			</script>
+		</section>
+
+		<footer>
+			<span class="ribbon-outer">
+				<span class="ribbon-inner">
+					<p>this project by <a href="https://github.com/vepasto">vepasto</a> can be found on <a href="https://github.com/vepasto/finnish-hyphenator">GitHub</a></p>
+				</span>
+				<span class="left-tail"></span>
+				<span class="right-tail"></span>
+			</span>
+			<p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+			<span class="octocat"></span>
+		</footer>
+
+	</div>
+
+
+</body>
+</html>

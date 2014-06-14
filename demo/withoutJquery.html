@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Finnish Hyphenator Examples Without jQuery</title>
+	<script type="text/javascript" src="../dist/finnishhyphenator.js"></script>
+	<style>
+		.hyphExample{
+			max-width:245px;
+			float:left;
+			margin-right: 10px;
+		}
+		.justify{
+			text-align: justify;
+		}
+	</style>
+</head>
+<body>
+	<h1>Finnish Hyphenator Example</h1>
+	<p>Example text from wikipedia http://fi.wikipedia.org/wiki/Tavu</p>
+	<div class="hyphExample">
+		<h2>Without hyphenator justified</h2>
+		<p class="justify"><b>Tavu</b> on <a href="/wiki/Puhe" title="Puhe">puhutun kielen</a> rytmiyksikkö, joka koostuu yhdestä tai (yleensä) enintään muutamasta <a href="/wiki/%C3%84%C3%A4nne" title="Äänne">äänteestä</a>. Yhdestä tai useammasta tavusta puolestaan muodostuu <a href="/wiki/Sana" title="Sana">sanoja</a>. Tavujen hahmotus perustuu <a href="/wiki/Fonotaksi" title="Fonotaksi">fonotaktisiin</a> sääntöihin, jotka vaihtelevat jonkin verran kielestä riippuen. Lapset omaksuvat <a href="/wiki/%C3%84idinkieli" title="Äidinkieli">äidinkielelleen</a> ominaisen tavurakenteen luonnostaan, ja jo pikkulapset osaavat jakaa sanoja tavuihin. Kun sanojen tavurakenteeseen halutaan kiinnittää erityistä huomiota, voidaan puhua <i>tavaamisesta</i> ja <a href="/wiki/Kirjoitus" title="Kirjoitus">kirjoituksen</a> yhteydessä <i>tavuttamisesta</i>. Yleensä tavujen rajoja ei kirjoituksessa tarvitse erikseen merkitä.</p>
+	</div>
+	<div class="hyphExample">
+		<h2>With hyphenator justified</h2>
+		<p class="justify hyph"><b>Tavu</b> on <a href="/wiki/Puhe" title="Puhe">puhutun kielen</a> rytmiyksikkö, joka koostuu yhdestä tai (yleensä) enintään muutamasta <a href="/wiki/%C3%84%C3%A4nne" title="Äänne">äänteestä</a>. Yhdestä tai useammasta tavusta puolestaan muodostuu <a href="/wiki/Sana" title="Sana">sanoja</a>. Tavujen hahmotus perustuu <a href="/wiki/Fonotaksi" title="Fonotaksi">fonotaktisiin</a> sääntöihin, jotka vaihtelevat jonkin verran kielestä riippuen. Lapset omaksuvat <a href="/wiki/%C3%84idinkieli" title="Äidinkieli">äidinkielelleen</a> ominaisen tavurakenteen luonnostaan, ja jo pikkulapset osaavat jakaa sanoja tavuihin. Kun sanojen tavurakenteeseen halutaan kiinnittää erityistä huomiota, voidaan puhua <i>tavaamisesta</i> ja <a href="/wiki/Kirjoitus" title="Kirjoitus">kirjoituksen</a> yhteydessä <i>tavuttamisesta</i>. Yleensä tavujen rajoja ei kirjoituksessa tarvitse erikseen merkitä.</p>
+	</div>
+	<div class="hyphExample" id="container1"></div>
+	<div class="hyphExample" id="container2"></div>
+	<script>
+		var finnishHyphenator = new FinnishHyphenator();
+
+		var els = document.getElementsByClassName("hyph");
+		finnishHyphenator.hyphenateElements(els);
+
+		var text = "Jukolan talo, eteläisessä Hämeessä, seisoo erään mäen pohjoisella rinteellä, liki Toukolan kylää. Sen läheisin ym­päristö on kivinen tanner, mutta alempana alkaa pellot, joissa, ennenkuin talo oli häviöön mennyt, aaltoili teräinen vilja. Peltojen alla on niittu, apilaäyräinen, halkileikkaama monipolvisen ojan; ja runsaasti antoi se heiniä, ennenkuin joutui laitumeksi kylän karjalle. Muutoin on talolla avaria metsiä, soita ja erämaita, jotka, tämän tilustan ensimmäisen perustajan oivallisen toiminnan kautta, olivat langenneet sille osaksi jo ison jaon käydessä entisinä aikoina. Silloinpa Jukolan isäntä, pitäen enemmän huolta jälkeentulevainsa edusta kuin omasta parhaastansa, otti vastaan osaksensa kulon polttaman metsän ja sai sillä keinolla seitsemän vertaa enemmän kuin toiset naapurinsa. Mutta kaikki kulovalkean jäljet olivat jo kadonneet hänen piiristänsä ja tuuhea metsä kasvanut sijaan. - Ja tämä on niiden seitsemän veljen koto, joiden elämänvaiheita tässä nyt käyn kertoilemaan.";
+		var hyphenated = finnishHyphenator.hyphenateText(text);
+		document.getElementById("container1").innerHTML = text;
+		document.getElementById("container2").innerHTML = hyphenated;
+	</script>
+</body>
+</html>
