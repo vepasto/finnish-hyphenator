@@ -6,10 +6,14 @@
  * tavuttaja, vaan tavuttaa varmimmat tapaukset. Mielummin
  * tavuttaja jättää tavuttamatta kuin tavuttaa epävarman paikan.
  *
+ * 
  * Hyphenation rules:
  *
  * [1] Tavuraja on aina konsonantin ja vokaalin yhdistelmän edellä
  * http://www.kotus.fi/index.phtml?s=4363, Hakupäivä 10.6.2014
+ *
+ *
+ * - Alle kahden merkin tavuja ei tehdä
  *
  * Author: Veikko Karsikko
  */
