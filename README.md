@@ -39,7 +39,7 @@ The unreleased development files can be obtained by:
 
 ### Including on your page
 
-## With jQuery
+#### With jQuery
 1. Include jQuery:
 
 	```html
@@ -58,7 +58,7 @@ The unreleased development files can be obtained by:
 	$(".elements").finnishHyphenator();
 	```
 
-## Without jQuery
+#### Without jQuery
 1. Include plugin's code:
 
 	```html
