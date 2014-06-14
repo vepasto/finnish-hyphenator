@@ -85,7 +85,7 @@
 			finnishHyphenator.hyphenateElement($(this.element));
 		}
 	});
-	
+
 	$.fn[pluginName] = function(options) {
 		this.each(function() {
 			if (!$.data(this, "plugin_" + pluginName)) {
