@@ -3,24 +3,32 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		
 		concat: {
-			dist: {
-				src: ["src/jquery.finnishhyphenator.js"],
+			dist_jquery: {
+				src: ["src/finnishhyphenator.js", "src/jquery.finnishhyphenator.js"],
 				dest: "dist/jquery.finnishhyphenator.js"
+			},
+			dist_js: {
+				src: ["src/finnishhyphenator.js"],
+				dest: "dist/finnishhyphenator.js"
 			}
 		},
 
 		jshint: {
-			files: ["src/jquery.finnishhyphenator.js"],
+			files: ["src/jquery.finnishhyphenator.js","src/finnishhyphenator.js"],
 			options: {
 				jshintrc: ".jshintrc"
 			}
 		},
 
 		uglify: {
-			my_target: {
+			dist_jquery: {
 				src: ["dist/jquery.finnishhyphenator.js"],
-				dest: "dist/jquery.finnishhyphenator.min.js"
-			}
+				dest: "dist/jquery.finnishhyphenator.min.js",
+			},
+			dist_js: {
+				src: ["src/finnishhyphenator.js"],
+				dest: "dist/finnishhyphenator.min.js"
+			},
 		},
 	});
 
