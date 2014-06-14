@@ -39,6 +39,7 @@ The unreleased development files can be obtained by:
 
 ### Including on your page
 
+## With jQuery
 1. Include jQuery:
 
 	```html
@@ -57,6 +58,25 @@ The unreleased development files can be obtained by:
 	$(".elements").finnishHyphenator();
 	```
 
+## Without jQuery
+1. Include plugin's code:
+
+	```html
+	<script type="text/javascript" src="../dist/finnishhyphenator.min.js"></script>
+	```
+2. Call the plugin:
+
+	```javascript
+	var finHyph = new FinnishHyphenator();
+	var hyphenated = finHyph.hyphenateText("Suomenkielinen teksti");
+	```
+OR
+
+	```javascript
+	var finHyph = new FinnishHyphenator();
+	var elements = document.getElementsByClassName("classname");
+	finHyph.hyphenateElements(elements);
+	```
 
 ## Reporting an Issue
 
