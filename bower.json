@@ -6,7 +6,7 @@
 		"Veikko Karsikko <veikko.karsikko@gmail.com>"
 	],
 	"description": "Adds hyphens to Finnish text",
-	"main": "src/jquery.finnishhyphenator.js",
+	"main": ["dist/jquery.finnishhyphenator.js","dist/finnishhyphenator.js"],
 	"keywords": [
 		"jquery",
 		"hyphenator",
