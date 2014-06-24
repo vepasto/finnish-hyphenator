@@ -4,6 +4,7 @@
 
 The Finnish Hyphenator jQuery Plugin provides drop-in improvements for your visual structure, while making simple customizations to fit your application more easily.
 
+See example page [http://vepasto.github.io/finnish-hyphenator/](http://vepasto.github.io/finnish-hyphenator/)
 
 
 ## Getting Started
