@@ -1,5 +1,5 @@
 {
-	"name": "Finnish Hyphenator",
+	"name": "finnish-hyphenator",
 	"title": "jQuery Finnish Hyphenator",
 	"description": "Hyphenates finnish text",
 	"keywords": [
@@ -9,7 +9,7 @@
 		"finnish",
 		"suomi"
 	],
-	"version": "0.1",
+	"version": "0.2.1",
 	"author": {
 		"name": "Veikko Karsikko",
 		"email": "veikko.karsikko@gmail.com",
@@ -23,7 +23,7 @@
 		}
 	],
 	"bugs": "https://github.com/vepasto/finnish-hyphenator/issues",
-	"homepage": "https://github.com/vepasto/finnish-hyphenator",
+	"homepage": "http://vepasto.github.io/finnish-hyphenator/",
 	"docs": "https://github.com/vepasto/finnish-hyphenator",
 	"download": "https://github.com/vepasto/finnish-hyphenator/archive/master.zip",
 	"dependencies": {
