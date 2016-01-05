@@ -31,10 +31,11 @@ If you've wrote custom methods that you'd like to contribute to additional-metho
 
 ## Unit Tests
 
-**FIXME:** *Tests still missing…*
+To test, run
 
-(To run unit tests, you should have a local webserver installed and pointing at your workspace. Then open `http://localhost/finnish-hyphenator/test` to run the unit tests. Start with one browser while developing the fix, then run against others before committing. Usually latest Chrome, Firefox, Safari and Opera and a few IEs.)
-
+```
+ $ npm test
+```
 
 ## Linting
 
