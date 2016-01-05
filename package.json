@@ -9,9 +9,11 @@
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.16",
     "karma-chrome-launcher": "^0.2.2",
+    "karma-firefox-launcher": "^0.1.7",
     "karma-jasmine": "^0.3.6"
   },
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start karma.conf.js"
+    "tdd": "./node_modules/karma/bin/karma start karma.conf.js",
+    "test": "./node_modules/.bin/karma start --browsers Firefox --single-run"
   }
 }
