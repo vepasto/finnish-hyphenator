@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vepasto/finnish-hyphenator.svg?branch=master)](https://travis-ci.org/vepasto/finnish-hyphenator)
+
 # Finnish Hyphenator
 
 *An ultra-light Finnish text hyphenator.*
