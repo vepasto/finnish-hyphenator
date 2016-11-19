@@ -24,25 +24,10 @@
 	 */
 	function FinnishHyphenator() {
 		this.vowels = "aeiouyåäö";
-		this.consonants = "bcdfghjklmnpqrstvwxyz";
+		this.consonants = "bcdfghjklmnpqrstvwxz";
 		this.hyphMark = "\u00AD";
-		// construct regExps only once
-		this.rule1RegExp = new RegExp("[" + this.consonants + "][" + this.vowels + "]", "gi");
-		this.endReg = new RegExp("[" + this.consonants + this.vowels + "]{2}$", "i");
-		this.wrapperElement = document.createElement("div");
+		this.hyphenRegexp=new RegExp("([" + this.consonants + this.vowels +"]{2})(?=[" + this.consonants + "][" + this.vowels + "])","ig");
 	}
-
-	/**
-	 * Adds hyphen to text if first part matches endReg
-	 */
-	FinnishHyphenator.prototype.addHyphen = function(text, idx) {
-		var firstPart = text.slice(0, idx);
-		if (this.endReg.exec(firstPart)) {
-			return (text.slice(0, idx) + this.hyphMark + text.slice(idx));
-		} else {
-			return false;
-		}
-	};
 
 	/**
 	 * Hyphenates JQuery element contents
@@ -69,24 +54,7 @@
 	 * Hyphenates text block
 	 */
 	FinnishHyphenator.prototype.hyphenateText = function(text) {
-		var hyphenated = text;
-		var hyphPositions = [];
-
-		// rule [1]
-		while ((match = this.rule1RegExp.exec(text)) != null) {
-			hyphPositions.push(match.index);
-		}
-
-		var count = 0;
-		for (var i = 0; i < hyphPositions.length; i++) {
-			var position = hyphPositions[i] + count * this.hyphMark.length;
-			var triedHyphenation = this.addHyphen(hyphenated, position);
-			if (triedHyphenation !== false) {
-				count++;
-				hyphenated = triedHyphenation;
-			}
-		}
-		return hyphenated;
+		return text.replace(this.hyphenRegexp,"$1"+this.hyphMark);
 	};
 
 	window.FinnishHyphenator = FinnishHyphenator;
